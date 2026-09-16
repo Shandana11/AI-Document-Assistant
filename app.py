@@ -309,7 +309,7 @@ Answer:"""
             try:
                 client = Groq(api_key=groq_api_key)
                 response = client.chat.completions.create(
-                    model="qwen/qwen3-32b",
+                    model="openai/gpt-oss-20b",
                     messages=[
                         {"role": "system", "content": "You answer strictly based on the provided context."},
                         {"role": "user", "content": prompt}
